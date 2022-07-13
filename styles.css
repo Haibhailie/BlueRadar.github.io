@@ -17,6 +17,19 @@ header {
   cursor: pointer;
 }
 
+.main_body_header {
+  background-color: #f7f7f7;
+}
+
+.main_body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+
 .nav__links a,
 .cta,
 .overlay__content a {
@@ -24,6 +37,25 @@ header {
   font-weight: 500;
   color: #edf0f1;
   text-decoration: none;
+}
+
+.team_logo {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #24252a;
+  color: white;
+  text-align: center;
 }
 
 .nav__links {
