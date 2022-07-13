@@ -1,7 +1,7 @@
 
 ## CMPT362 Summer 2022 
 
-![BlueRadar](https://imgur.com/qeYdp42)
+![BlueRadar](docs/assets/BlueRadarLogo.png)
 
 Repository that hosts the website for the CMPT362 Blue Radar Project application.
 
