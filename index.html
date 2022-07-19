@@ -1,95 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>BlueRadar - The AIO IOT Tracker</title>
-</head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
 
-<body>
+  <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-        <div class="container align-items-center justify-content-between">
-            <a class="navbar-brand" href="/index.html"><img src="docs/assets/Logo2.png" height="80" width="auto" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#pitch" class="nav-link">Pitch</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#project" class="nav-link">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#milestones" class="nav-link">Milestones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About the Devs</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container align-items-center justify-content-between">
+        <a class="navbar-brand" href="/index.html"
+          ><img src="docs/assets/Logo2.png" height="60" width="auto"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pitch" class="nav-link">Pitch</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="#milestones" class="nav-link">Milestones</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About the Devs</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- HomeSection -->
-    <section class="bg-dark text-light px-5 pt-5 text-center text-md-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1>
-                        Your One Stop
-                        <span class="text-primary">Device Manager</span>
-                    </h1>
-                    <p class="lead my-4">
-                        The revolutionary upgrades in IoT and the immense love towards
-                        losing cables in our recent technological trends has led to a
-                        massive outburst in the number of wireless devices we use.
-                        Sometimes, we know that it gets a little overwhelming for
-                        everyone. Don't worry though, we've got you. BlueRadar is a
-                        unified system that can manage, track and locate all the devices
-                        that you've paired with your Android smartphone.
-                    </p>
-                </div>
-                <img class="img-fluid w-50 float-right d-none d-md-block" src="./docs/assets/ProtoSnip.PNG" alt="" />
-            </div>
+    <section
+      id="home"
+      class="bg-dark text-light px-5 pt-10 text-center text-md-start"
+      style="margin-top: 100px"
+    >
+      <div class="container align-items-center justify-content-between">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Your One Stop
+              <span class="text-primary">Device Manager</span>
+            </h1>
+            <p class="lead my-4">
+              The revolutionary upgrades in IoT and the immense love towards
+              losing cables in our recent technological trends has led to a
+              massive outburst in the number of wireless devices we use.
+              Sometimes, we know that it gets a little overwhelming for
+              everyone. Don't worry though, we've got you. BlueRadar is a
+              unified system that can manage, track and locate all the devices
+              that you've paired with your Android smartphone.
+            </p>
+          </div>
+          <img
+            class="img-fluid w-50 float-right d-none d-lg-block"
+            src="./docs/assets/ProtoSnip.PNG"
+            alt=""
+          />
         </div>
+      </div>
     </section>
 
     <!-- Project Pitch -->
-    <section class="px-5 pt-5 text-center text-md-start">
-        <div class="container">
-            <div class="h-100 d-flex align-items-center justify-content-center">
-                <div class="align-items-center justify-content-between">
-                    <h1 class="text-center">Project Pitch</h1>
-                    <p class="lead my-4 text-center">
-                        Wanna know why we think this is a good idea? Watch the video
-                        below.
-                    </p>
-                    <p class="lead my-4 text-center">
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive embed-responsive-16by9"
-                            src="https://www.youtube.com/embed/DftRoMCo2CI"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    </p>
-                </div>
+    <section id="pitch" class="px-5 py-5 text-center text-md-start">
+      <div class="container">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+          <div class="align-items-center justify-content-between">
+            <h1 class="text-center">Project Pitch</h1>
+            <p class="lead my-4 text-center">
+              Wanna know why we thought this was a good idea? Watch the video
+              below to find out.
+            </p>
+            <p class="lead my-4 text-center"></p>
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="embed-responsive embed-responsive-16by9"
+                src="https://www.youtube.com/embed/DftRoMCo2CI"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-</body>
 
+    <!-- Project -->
+    <section
+      id="project"
+      class="bg-dark text-light px-5 py-5 text-center text-md-start"
+    >
+      <div class="container pb-5">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+          <div class="align-items-center justify-content-between">
+            <h1 class="text-center">Project Technical Specifications</h1>
+            <p class="lead my-4 text-center">
+              A bit of a sneek peek behind the technicalities of the application
+            </p>
+            <p class="lead my-4 text-center py-1"></p>
+            <p class="lead my-4 text-center fs-3 fw-bold">
+              The MVVM Diagram of the Application Environment
+            </p>
+            <img
+              class="img-fluid w-100 border border-dark border-2"
+              src="docs/assets/MVVMDiagram.png"
+            />
+
+            <p class="lead my-4 text-center fs-3 pb-2 fw-bold">Prototypes</p>
+            <p class="lead my-4 text-center fs-4">
+              Figma Prototype for the Android Application
+            </p>
+            <div class="ratio ratio-16x9">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxIFKDD3nYBJfH6IpZMfx3T%2FCMPT362-Prototype-Application%3Fnode-id%3D0%253A1"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Milestones Accordian-->
+    <section id="milestones" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Project Milestones</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Show and Tell - I
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                For the first Show and Tell, we plan on having the boilerplate
+                of the application ready with the base MVVM architecture
+                complete and communicating with one another. In addition to
+                which, the data class to communicate with our database, a
+                working navigation fragment and the base bluetooth functionality
+                is imminent to completion, and our application will be able to
+                retrieve all the paired BlueTooth devices.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Show and Tell - II
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                For the second Show and Tell, we plan on having the bare minimum
+                functionalities in a working state, i.e. Authentication,
+                Tracking, Managing and Navigating. The application will also be
+                able to backup and restore the devices in the livedata once
+                authenticated.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Final Project Presentation
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Post Course Plans
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Milestones Accordian-->
+    <section id="about" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">About the Developers</h2>
+        <p class="lead text-center text-white mb-5">
+          We're a team of 4 Computing Science students from Simon Fraser
+          University, all with a vision towards making accessible, facilitatible
+          and absolutely aesthetic applications for Android, iOS and PC.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">
+                  <span class="text-primary">Shashank</span> Thanalapati
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  consequuntur impedit eaque. Eius vitae amet numquam est
+                  voluptatibus? Saepe quibusdam dolorem maxime sequi cumque iure
+                  id at ea quae rerum.
+                </p>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/2.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">
+                  <span class="text-primary">Lynn</span> <br />
+                  Nguyen
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  consequuntur impedit eaque. Eius vitae amet numquam est
+                  voluptatibus? Saepe quibusdam dolorem maxime sequi cumque iure
+                  id at ea quae rerum.
+                </p>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/6.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">
+                  <span class="text-primary">Shan</span> <br />
+                  Ying Yang
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  consequuntur impedit eaque. Eius vitae amet numquam est
+                  voluptatibus? Saepe quibusdam dolorem maxime sequi cumque iure
+                  id at ea quae rerum.
+                </p>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/2.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">
+                  <span class="text-primary">Julian</span> <br />
+                  Chan
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  consequuntur impedit eaque. Eius vitae amet numquam est
+                  voluptatibus? Saepe quibusdam dolorem maxime sequi cumque iure
+                  id at ea quae rerum.
+                </p>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2022 Team Canvas > <span class="text-danger">CourSys</span></p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-4">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+</footer>
+  </body>
 </html>
