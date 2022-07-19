@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>BlueRadar - The AIO IOT Tracker</title>
-  </head>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 
-  <body>
+<body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/index.html"
-          ><img src="docs/assets/Logo2.png" height="80" width="auto"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#pitch" class="nav-link">Pitch</a>
-            </li>
-            <li class="nav-item">
-              <a href="#project" class="nav-link">Project</a>
-            </li>
-            <li class="nav-item">
-              <a href="#milestones" class="nav-link">Milestones</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About the Devs</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container align-items-center justify-content-between">
+            <a class="navbar-brand" href="/index.html"><img src="docs/assets/Logo2.png" height="80" width="auto" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pitch" class="nav-link">Pitch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#milestones" class="nav-link">Milestones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About the Devs</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <!-- HomePage -->
-  </body>
+    <!-- HomeSection -->
+    <section class="bg-dark text-light px-5 pt-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>
+                        Your One Stop
+                        <span class="text-primary">Device Manager</span>
+                    </h1>
+                    <p class="lead my-4">
+                        The revolutionary upgrades in IoT and the immense love towards
+                        losing cables in our recent technological trends has led to a
+                        massive outburst in the number of wireless devices we use.
+                        Sometimes, we know that it gets a little overwhelming for
+                        everyone. Don't worry though, we've got you. BlueRadar is a
+                        unified system that can manage, track and locate all the devices
+                        that you've paired with your Android smartphone.
+                    </p>
+                </div>
+                <img class="img-fluid w-50 float-right d-none d-md-block" src="./docs/assets/ProtoSnip.PNG" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Pitch -->
+    <section class="px-5 pt-5 text-center text-md-start">
+        <div class="container">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="align-items-center justify-content-between">
+                    <h1 class="text-center">Project Pitch</h1>
+                    <p class="lead my-4 text-center">
+                        Wanna know why we think this is a good idea? Watch the video
+                        below.
+                    </p>
+                    <p class="lead my-4 text-center">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive embed-responsive-16by9"
+                            src="https://www.youtube.com/embed/DftRoMCo2CI"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
